@@ -55,6 +55,7 @@
 .header ul{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
 }
 .header a{
@@ -98,7 +99,9 @@
 
 .wrapper{
   display: grid;
-  grid-template: repeat(5,auto)/repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+  height: 100vh;
+  grid-template-rows: 0.7fr 3fr 3fr 0.3fr;
   grid-template-areas:
   "header   header    header"
   "..   hero    .."
@@ -108,13 +111,15 @@
 ul {
   list-style: none;
 }
-
+body{
+  margin: 0;
+}
 .fooCop{
 background-color: #C1CED9;
 text-align: center;
 }
 .fooCon{
-  padding: 0.3em;
+  margin-bottom: 0.2em;
   text-align: center;
   word-spacing: 0.3em;
 }
