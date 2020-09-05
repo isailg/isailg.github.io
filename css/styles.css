@@ -33,6 +33,122 @@
 .The-Different-Sky-4-hex { color: #0D1C26; }
 .The-Different-Sky-5-hex { color: #173040; }
 
+@font-face {
+   font-family: 'icomoon';
+   src:  url('../fonts/icomoon.eot?lohhxq');
+   src:  url('../fonts/icomoon.eot?lohhxq#iefix') format('embedded-opentype'),
+     url('../fonts/icomoon.ttf?lohhxq') format('truetype'),
+     url('../fonts/icomoon.woff?lohhxq') format('woff'),
+     url('../fonts/icomoon.svg?lohhxq#icomoon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+ }
+
+ [class^="icon-"], [class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icomoon' !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ .icon-newspaper:before {
+   content: "\e904";
+ }
+ .icon-quill:before {
+   content: "\e907";
+ }
+ .icon-profile:before {
+   content: "\e923";
+ }
+ .icon-file-zip:before {
+   content: "\e92b";
+ }
+ .icon-folder-open:before {
+   content: "\e930";
+ }
+ .icon-phone:before {
+   content: "\e942";
+ }
+ .icon-envelop:before {
+   content: "\e945";
+ }
+ .icon-location:before {
+   content: "\e947";
+ }
+ .icon-display:before {
+   content: "\e956";
+ }
+ .icon-rocket:before {
+   content: "\e9a5";
+ }
+ .icon-menu:before {
+   content: "\e9bd";
+ }
+ .icon-sphere:before {
+   content: "\e9c9";
+ }
+ .icon-earth:before {
+   content: "\e9ca";
+ }
+ .icon-embed2:before {
+   content: "\ea80";
+ }
+ .icon-terminal:before {
+   content: "\ea81";
+ }
+ .icon-instagram:before {
+   content: "\ea92";
+ }
+ .icon-spotify:before {
+   content: "\ea94";
+ }
+ .icon-telegram:before {
+   content: "\ea95";
+ }
+ .icon-twitter:before {
+   content: "\ea96";
+ }
+ .icon-youtube:before {
+   content: "\ea9d";
+ }
+ .icon-vimeo2:before {
+   content: "\eaa1";
+ }
+ .icon-github:before {
+   content: "\eab0";
+ }
+ .icon-tux:before {
+   content: "\eabd";
+ }
+ .icon-android:before {
+   content: "\eac0";
+ }
+ .icon-soundcloud2:before {
+   content: "\eac4";
+ }
+ .icon-linkedin:before {
+   content: "\eac9";
+ }
+ .icon-stackoverflow:before {
+   content: "\ead0";
+ }
+ .icon-paypal:before {
+   content: "\ead8";
+ }
+ .icon-git:before {
+   content: "\eae7";
+ }
+
+
 body,html {
   height: 100%;
   color: white;
@@ -41,12 +157,10 @@ body,html {
 
 .header {
   grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding: 0 1.6vw 0 2vw;
   /* background-color: #C1CED9; */
   /* color: #2C4459; */
+  text-align: center;
   color: white;
 }
 .logo {
@@ -55,16 +169,17 @@ body,html {
 
 .navlist {
     /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
+    grid-area: navl;
+
+
 }
-.header ul{
+.navlist ul{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
-.header a{
+.navlist a{
   text-decoration: none;
   padding: 0 1.4vw;
   /* color: #2C4459; */
@@ -119,6 +234,8 @@ body,html {
   /* color: #0D1C26; */
   color: white;
   grid-area: footer;
+  text-align: center;
+
   /* border: 1px solid blue; */
 }
 
@@ -126,14 +243,15 @@ body,html {
   display: grid;
   grid-template-columns: repeat(5,1fr);
   height: 100vh;
-  grid-template-rows: 0.7fr 2fr 2fr 1fr 1fr 0.3fr;
+  grid-template-rows: 0.7fr 1fr 1fr 2fr 1fr 1fr 0.3fr;
   grid-template-areas:
-  "header header header header header"
-  " hero hero hero  desc2 desc2"
-  " hero hero hero desc1 desc1"
-  " hero hero hero  desc3 desc3"
-  " hero hero hero  desc3 desc3 "
-  "footer footer footer footer footer";
+  "header header .. navl navl"
+  " .. .. .. desc2 desc2"
+  " hero hero ..  desc2 desc2"
+  " hero hero .. desc1 desc1"
+  " hero hero ..  desc3 desc3"
+  " hero hero ..  desc3 desc3 "
+  " foo foo footer fooc fooc";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,13 +295,21 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.fooCop{
+
+.foo{
+  grid-area: foo;
   text-align: center;
+  padding-bottom: 0.2em;
+  /* word-spacing: 0.3em; */
+  letter-spacing: 0.6em;
 }
 .fooCon{
+  grid-area: fooc;
+  text-align: right;
   padding-bottom: 0.2em;
-  text-align: center;
-  word-spacing: 0.3em;
+  letter-spacing: 0.6em;
+
+  /* word-spacing: 0.3em; */
 }
 .alias{
   font-style: normal;
