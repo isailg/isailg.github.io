@@ -150,13 +150,19 @@
 
 
 body,html {
+  background-color: black;
+
   height: 100%;
   color: white;
   margin: 0;
 }
 
 .header {
-  grid-area: header;
+  /* grid-area: header; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   padding: 0 1.6vw 0 2vw;
   /* background-color: #C1CED9; */
   /* color: #2C4459; */
@@ -169,7 +175,11 @@ body,html {
 
 .navlist {
     /* border: 1px solid red; */
-    grid-area: navl;
+    /* grid-area: navl; */
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
 
 }
@@ -185,55 +195,17 @@ body,html {
   /* color: #2C4459; */
   color: white;
 }
-.hero{
-  grid-area: hero;
-  /* border: 1px solid green; */
-  text-align: center;
-}
-.desc1{
-  grid-area: desc1;
-  text-align: left;
-  padding-left: 0.6em;
-  background-color: Black; /* Fallback color */
-  background-color: rgba(42,135,173, 0.3); /* Black w/opacity/see-through */
-  /* color: white; */
-  /* background-color: #173040; */
-  /* border: 1px solid red; */
-}
-.desc1 ul{
-  padding: 0;
-}
-.desc3 ul{
-  padding: 0;
-}
-.desc2{
-  grid-area: desc2;
-  text-align: left;
-  padding-left: 0.6em;
 
-  background-color: Black; /* Fallback color */
-  background-color: rgba(42,135,173, 0.3); /* Black w/opacity/see-through */
-
-  /* background-color: #C1CED9; */
-  /* border: 1px solid red; */
-}
-.desc3{
-  grid-area: desc3;
-  text-align: left;
-  padding-left: 0.6em;
-
-  background-color: Black; /* Fallback color */
-  background-color: rgba(42,135,173, 0.3); /* Black w/opacity/see-through */
-
-  /* padding-right: 0.6em; */
-  /* background-color: #465E73; */
-  /* border: 1px solid red; */
-}
 .footer{
   /* background-color: #C1CED9; */
   /* color: #0D1C26; */
   color: white;
-  grid-area: footer;
+  /* grid-area: footer; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
   text-align: center;
 
   /* border: 1px solid blue; */
@@ -243,15 +215,17 @@ body,html {
   display: grid;
   grid-template-columns: repeat(5,1fr);
   height: 100vh;
-  grid-template-rows: 0.7fr 1fr 1fr 2fr 1fr 1fr 0.3fr;
-  grid-template-areas:
+  /* grid-template-rows: 0.7fr 1fr 1fr 2fr 1fr 1fr 0.3fr; */
+  grid-template-rows: 11vh 14vh 14vh 29vh 14vh 14vh 4vh;
+
+  /* grid-template-areas:
   "header header .. navl navl"
   " .. .. .. desc2 desc2"
   " hero hero ..  desc2 desc2"
   " hero hero .. desc1 desc1"
   " hero hero ..  desc3 desc3"
   " hero hero ..  desc3 desc3 "
-  " foo foo footer fooc fooc";
+  " foo foo footer fooc fooc"; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -259,37 +233,16 @@ body,html {
   z-index: 3;
   width: 77%;
 }
-.terminal {
-  margin: 0;
-}
-.termi{
-  margin-top: 0;
-  background-color: Black; /* Fallback color */
-  background-color: rgba(255,255,255,0.3); /* Black w/opacity/see-through */
-  }
-/* .term{
-  background-color: Black;
-  background-color: rgba(113, 242, 15, 0.3);
-  color: white;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 23%;
-  height: 23%;
-  text-align: center;
-} */
+
 ul {
   list-style: none;
 }
 
 .bimg{
-  background: url(../images/noche.jpg);
+  /* background: url(../images/noche.jpg);
   filter: blur(8px);
-  -webkit-filter: blur(8px);
-  /* background-color: black; */
-  height: 100%;
+  -webkit-filter: blur(8px); */
+  /* height: 100%; */
 
   background-position: center;
   background-repeat: no-repeat;
@@ -297,25 +250,27 @@ ul {
 }
 
 .foo{
-  grid-area: foo;
+  /* grid-area: foo; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
   text-align: center;
   padding-bottom: 0.2em;
   /* word-spacing: 0.3em; */
   letter-spacing: 0.6em;
 }
 .fooCon{
-  grid-area: fooc;
+  /* grid-area: fooc; */
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
   text-align: right;
   padding-bottom: 0.2em;
   letter-spacing: 0.6em;
 
   /* word-spacing: 0.3em; */
-}
-.alias{
-  font-style: normal;
-  color: #f2ef13;
-}
-.dir{
-  font-style: normal;
-  color: #13f295;
 }

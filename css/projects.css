@@ -1,0 +1,13 @@
+.wrapper{
+  grid-template-rows: 11vh 10vh 20vh 30vh 20vh 20vh 4vh;
+
+}
+.alg{
+  color: white;
+  text-align: center;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
