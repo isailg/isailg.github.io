@@ -160,7 +160,7 @@ body,html {
 .header {
   /* grid-area: header; */
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
   padding: 0 1.6vw 0 2vw;
@@ -176,12 +176,12 @@ body,html {
 .navlist {
     /* border: 1px solid red; */
     /* grid-area: navl; */
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 7;
+    grid-column-end: 11;
     grid-row-start: 1;
     grid-row-end: 2;
-
-
+    display: flex;
+    align-items: center;
 }
 .navlist ul{
   display: flex;
@@ -201,22 +201,48 @@ body,html {
   /* color: #0D1C26; */
   color: white;
   /* grid-area: footer; */
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid blue; */
+}
+.foo{
+  /* grid-area: foo; */
+  grid-column-start: 1;
+  grid-column-end: 5;
   grid-row-start: 7;
   grid-row-end: 8;
 
   text-align: center;
+  padding-bottom: 0.2em;
+  /* word-spacing: 0.3em; */
+  letter-spacing: 0.6em;
+}
+.fooCon{
+  /* grid-area: fooc; */
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 7;
+  grid-row-end: 8;
 
-  /* border: 1px solid blue; */
+  text-align: right;
+  padding-bottom: 0.2em;
+  letter-spacing: 0.6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* word-spacing: 0.3em; */
 }
 
 .wrapper{
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  height: 100vh;
-  /* grid-template-rows: 0.7fr 1fr 1fr 2fr 1fr 1fr 0.3fr; */
-  grid-template-rows: 11vh 14vh 14vh 29vh 14vh 14vh 4vh;
+  grid-template-columns: repeat(10,1fr);
 
   /* grid-template-areas:
   "header header .. navl navl"
@@ -231,46 +257,9 @@ body,html {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  width: 77%;
+  width: 100%;
 }
 
 ul {
   list-style: none;
-}
-
-.bimg{
-  /* background: url(../images/noche.jpg);
-  filter: blur(8px);
-  -webkit-filter: blur(8px); */
-  /* height: 100%; */
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.foo{
-  /* grid-area: foo; */
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 7;
-  grid-row-end: 8;
-
-  text-align: center;
-  padding-bottom: 0.2em;
-  /* word-spacing: 0.3em; */
-  letter-spacing: 0.6em;
-}
-.fooCon{
-  /* grid-area: fooc; */
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 7;
-  grid-row-end: 8;
-
-  text-align: right;
-  padding-bottom: 0.2em;
-  letter-spacing: 0.6em;
-
-  /* word-spacing: 0.3em; */
 }
