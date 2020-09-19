@@ -168,13 +168,14 @@ body,html {
 }
 
 .navlist {
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 2;
 }
 
 .navlist ul{
@@ -241,7 +242,7 @@ body,html {
 
 .wrapper{
   display: grid;
-  grid-template-columns: 5vw 30vw 15vw 15vw 30vw 5vw;
+  grid-template-columns: 5vw 30vw 13vw 4vw 13vw 30vw 5vw;
   position: absolute;
   top: 50%;
   left: 50%;
