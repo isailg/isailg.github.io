@@ -8,19 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Mono:wght@300;400&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <script src="js/home.js" type="text/javascript"></script>
   </head>
   <body>
 
     <i class="first"></i>
     <i class="second"></i>
+    <a href="javascript:void(0);" onclick="myFunction()"><i class="icon-menu zbb" id="bm"></i></a>
+    <nav class="navlist" id="nav_mobile">
+      <ul>
+        <li><a href="pages/page404.html">CV</a></li>
+        <li><a href="pages/page404.html">Projects</a></li>
+        <li><a href="pages/page404.html">Publications</a></li>
+        <li><a href="pages/page404.html">OpenSource</a></li>
+        <li><a href="pages/page404.html">About</a></li>
+      </ul>
+    </nav>
+
     <div class="wrapper">
 
       <header class="header">
-        <div class="logo"> <h1> Isaí López-García</h1> </div>
+        <div class="logo"> <h1> <a id="nl" href="#">Isaí López García</a> </h1> </div>
       </header>
-
-      <nav class="navlist">
+      <nav class="navlist" id="navbar">
         <ul>
           <li><a href="pages/page404.html">CV</a></li>
           <li><a href="pages/page404.html">Projects</a></li>
@@ -39,82 +50,83 @@
       <div class="terminal" id="term1"></div>
       <h4 class="namet" id="term1_n"><i class="icon-tux ti" id="gh"></i></h4>
       <div class="desc" id="term1_d">
-        <h4 class="command_frt"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg init</h4>
-        <h4 class="command_title">- Personal Summary -</h4>
-        <p>Agricultural mechanical engineer oriented to software development with 2 years of experience in the desing of algorithms and built of C/ C ++  applications  for autonomous machines. </p>
+        <h4 class="command_up" id="cinit"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg init</h4>
+        <h2 class="command_title">- Personal Summary -</h2>
+        <p class="contain" >Agricultural mechanical engineer oriented to software development with 2 years of experience in the desing of algorithms and built of C/ C ++  applications  for autonomous machines. </p>
 
-        <h4 class="command"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg objective</h4>
-        <h4 class="command_title">- Objective -</h4>
-        <p>Aiming to collaborate with the development of sustainably technologies for the grow, innovation and self-sustanability of the world for the 2050. </p>
-        <br>
-        <h4 class="command_frt"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$</h4>
+        <h4 class="command_int" id="cobj"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg objective</h4>
+        <h2 class="command_title">- Objective -</h2>
+        <p class="contain" >Aiming to collaborate with the development of sustainably technologies for the grow, innovation and self-sustanability of the world for the 2050.
+        </p>
+
+
+        <h4 class="command_int" id="command_3"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$</h4>
 
       </div>
 
       <div class="terminal" id="term2"></div>
       <h4 class="namet" id="term2_n"><i class="icon-tux ti" id="gh"></i> </h4>
       <div class="desc" id="term2_d">
-        <h4 class="command_frt"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg skills</h4>
-        <h4 class="command_title2">- Skills -</h4>
+        <h4 class="command_up" id="csk"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg skills</h4>
+        <h2 class="command_title">- Skills -</h2>
         <div id="skills">
-          <ul id="skills_c1" class="command_frt">
+          <ul class="contain" id="skills_c1">
             <li>C/C++</li>
             <li>Python</li>
             <li>JavaScript</li>
             <li>HTML & CSS</li>
             <li>Bash</li>
           </ul>
-          <ul id="skills_c2" class="command_frt">
+          <ul class="contain" id="skills_c2" >
             <li>Git</li>
             <li>OpenCV</li>
             <li>OpenGL</li>
             <li>ROS</li>
             <li>Jenkins</li>
           </ul>
-          <ul id="skills_c3" class="command_frt">
+          <ul class="contain" id="skills_c3">
             <li>Linux</li>
             <li>Data structures</li>
             <li>Microcontrollers</li>
             <li>Object oriented programming</li>
           </ul>
-          <ul id="skills_c4" class="command_frt">
+          <ul  class="contain" id="skills_c4">
             <li>Spanish  (Native)</li>
             <li>English  (Good level)</li>
             <li>Japanese (Intermediate)</li>
             <li>German   (Basic)</li>
-            <li>Nahuatl  (Basic)</li>
           </ul>
 
         </div>
-        <h4 class="command_frt"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg fields_of_interest</h4>
-        <h4 class="command_title2">- Fields of Interest -</h4>
-        <p>AI · Autonomous Machines · Byosystems · Clean Energy · Computer vision · FPGA design · Maths · Physics · Precision Farm · Sustainability · Web development </p>
-        <h4 class="command"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$</h4>
+        <h4 class="command_int" id="cfoi"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg interest</h4>
+        <h2 class="command_title">- Fields of Interest -</h2>
+        <p  class="contain" id="foi">AI · Autonomous Machines · Byosystems · Clean Energy · Computer vision · FPGA design · Maths · Physics · Precision Farm · Sustainability · Web development </p>
+        <h4 class="command_int" id="command_6"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$</h4>
 
       </div>
 
       <div class="bord"></div>
       <div class="footer_latest">
-        <h3 class="command_frt">Latest updates</h3>
+        <h3 class="footer_title">Latest updates</h3>
         <ul>
-          <li>Auto-guide system for agricultural robots. <a href="#"><small>Project</small> </a></li>
-          <li>Environment recognition for mobile robots. <a href="#"><small>Project</small></a> </li>
-          <li>Internship at TUAT. <a href="#"><small>Research Experience</small></a></li>
+          <li>Auto-guide system for agricultural robots. <a href="page404.html"><small>Project</small> </a></li>
+          <li>Environment recognition for mobile robots. <a href="page404.html"><small>Project</small></a> </li>
+          <li>Internship at TUAT. <a href="page404.html"><small>Research Experience</small></a></li>
         </ul>
       </div>
       <div class="footer_contact">
-        <a href="#"> <i class="icon-github git-i"></i></a>
-        <a href="#"> <i class="icon-linkedin link-i"></i></a>
-        <a href="#"> <i class="icon-twitter tw-i"></i></a>
+        <a href="https://github.com/isailg"> <i class="icon-github git-i"></i></a>
+        <a href="https://www.linkedin.com/in/isailg/"> <i class="icon-linkedin link-i"></i></a>
+        <a href="https://twitter.com/isailg0"> <i class="icon-twitter tw-i"></i></a>
       </div>
       <div class="footer_collaborate">
-        <h3 class="command_frt">Contact</h3>
+        <h3 class="footer_title">Contact</h3>
         <p>Email: isailg.contact@gmail.com <br>Ubication: Oaxaca, México <br> Open to relocation </p>
       </div>
       <footer class="footer">
           © 2020 Isaí López-García
       </footer>
-
     </div>
+
   </body>
 </html>
