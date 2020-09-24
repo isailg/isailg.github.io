@@ -418,56 +418,57 @@ h6{
   .wrapper{
     grid-template-rows:
     100px 20px 130px
-    160px 155px     305px 160px    210px 165px    225px 160px    210px
-    90px 130px 30px;
-
+    160px 250px     305px 250px    205px 250px    225px 250px    205px
+    90px 140px 30px;
   }
   #pj1{
     grid-row-start: 4;
     grid-row-end: 6;
-    height: 290px;
+    height: 380px;
   }
   #pj2{
     grid-row-start: 6;
     grid-row-end: 8;
-    height: 440px;
+    height: 525px;
   }
   #pj3{
     grid-row-start: 8;
     grid-row-end: 10;
-    height: 350px;
+    height: 425px;
   }
   #pj4{
     grid-row-start: 10;
     grid-row-end: 12;
-    height: 360px;
+    height: 445px;
   }
   #pj5{
     grid-row-start: 12;
     grid-row-end: 14;
-    height: 210px;
+    height: 215px;
   }
+
   .project_img{
-    height: 110px;
+    height: 200px;
+    width: 370px;
   }
   .project_img-d{
-    height: 55px;
+    height: 100px;
+    width: 370px;
   }
   .project_fig{
-    width: 200px;
-  margin: 0 0 25px 0;
-  padding: 0;
+    width: 370px;
   }
+  .sk_al{
+    padding-right: 1em;
+    text-align: center;
+    margin: 0;
+  }
+
   .project_con{
     padding: 0;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-  }
-  .sk_al{
-    text-align: center;
-    margin: 0;
-    padding: 0;
   }
   #p_1_d{
     grid-row-start: 4;
@@ -551,11 +552,16 @@ h6{
 
   .project_r{
     padding-left: 1em;
+    padding-right: 1em;
   }
   .bord{
     grid-row-start: 13;
     grid-row-end: 14;
     border-bottom: 0.1vh solid rgba(255, 255, 255, 0.1);
+  }
+  .page_title {
+    grid-column-start: 2;
+    grid-column-end: 6;
   }
 
   .footer{
@@ -579,7 +585,7 @@ h6{
 
 }
 
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 960px) {
   .wrapper{
     grid-template-rows:
     100px 20px 130px
@@ -593,12 +599,13 @@ h6{
   #pj3{
     height: 385px;
   }
-}
+} */
+
 @media screen and (max-width: 768px) {
   .wrapper{
     grid-template-rows:
     100px 20px 130px
-    180px 245px     305px 245px    275px 250px    245px 250px    215px
+    180px 245px     305px 245px    275px 250px    245px 245px    215px
     90px 130px 30px;
   }
   #pj1{
@@ -633,7 +640,7 @@ h6{
     border-radius: 33%;
     background-color: rgba(0,0,0,0.8);
     color: white;
-    top: 27px;
+    top: 25px;
     left: 96vw;
     z-index: 5;
     transform: translate(-86%,0);
@@ -663,18 +670,5 @@ h6{
     left: 100%;
     width: 0%;
   }
-  .project_img{
-    height: 200px;
-    width: 400px;
-  }
-  .project_img-d{
-    height: 100px;
-    width: 400px;
-  }
-  .project_fig{
-    width: 400px;
-  }
-  .sk_al{
-    padding-right: 1em;
-  }
+
 }
