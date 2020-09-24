@@ -803,10 +803,6 @@ h6{
     padding: 0 0 0 2vw;
     font-size: 0.6em;
   }
-  h3.footer_title {
-    font-size: 1em;
-    text-align: center;
-  }
   .footer_latest ul{
     font-size: 0.9em;
     text-align: center;
@@ -815,8 +811,12 @@ h6{
     font-size: 0.7em;
     text-align: center;
   }
+  h3.footer_title {
+    font-size: 1em;
+    text-align: center;
+  }
 }
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .wrapper{
     grid-template-rows:
     100px 6px 70px
@@ -837,8 +837,8 @@ h6{
   }
   #pj5{
     height: 300px;
-  }
-@media screen and (max-width: 320px) {
+  } */
+@media screen and (max-width: 375px) {
   .wrapper{
     grid-template-rows:
     100px 6px 70px
