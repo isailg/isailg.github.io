@@ -121,7 +121,7 @@ h6{
   color: white;
 }
 .page_title{
-  text-align: left;
+  text-align: center;
   padding-left: 2em;
   text-transform: uppercase;
 }
@@ -294,7 +294,6 @@ h6{
   font-weight: 600;
   letter-spacing: 0.1em;
   color: rgb(255, 255, 255, 0.9);
-
 }
 .footer_latest{
   grid-column-start: 2;
@@ -359,32 +358,33 @@ h6{
   }
   .page_title{
     text-align: center;
+    padding: 0;
   }
-  #work_experience.page_title{
+  #education.page_title{
     display: flex;
     align-items: center;
     margin-top: 30px;
   }
 
-  #education{
+  #work_experience{
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
   }
-  #educ{
+  #work{
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
   }
-  #work_experience{
+  #education{
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 6;
   }
-  #work{
+  #educ{
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 6;
