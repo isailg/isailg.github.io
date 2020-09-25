@@ -359,7 +359,6 @@ h6{
   grid-column-end: 5;
   grid-row-start: 14;
   grid-row-end: 15;
-  text-align: left;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
@@ -370,6 +369,7 @@ h6{
   font-family: inherit;
   font-size: inherit;
   list-style: none;
+  text-align: left;
   padding: 0;
 }
 .footer_latest a, li{
@@ -465,7 +465,6 @@ h6{
     left: 100%;
     width: 0%;
   }
-
 }
 
 @media screen and (max-width: 425px) {
@@ -593,6 +592,6 @@ h6{
     font-size: 0.86em;
   }
   .project_inst{
-    font-size: 0.66em;
+    font-size: 0.63em;
   }
 }
