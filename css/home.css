@@ -583,7 +583,7 @@ p.desc_contain{
 
 @media screen and (max-width: 425px) {
   .wrapper{
-    grid-template-rows: 15.3vh 77vh 3.7vh 3vh auto auto 3vh auto auto auto 6vh;
+    grid-template-rows: 15.3vh 66vh 3.7vh 3vh auto auto 3vh auto auto auto 6vh;
   }
   #mb{
     line-height: 3em;
