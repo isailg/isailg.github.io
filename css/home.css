@@ -57,7 +57,6 @@ h1 {
   font-size: 2.6em;
   font-family: 'Open Sans',sans-serif;
   font-weight: 600;
-  margin: 0;
   padding: 0;
 }
 .navlist {
@@ -575,7 +574,7 @@ p.desc_contain{
 
 @media screen and (max-width: 425px) {
   .wrapper{
-    grid-template-rows: 15.6vh 84.4vh 3.7vh 3vh auto auto 3vh auto auto auto 6vh;
+    grid-template-rows: 15.6vh 70vh 3.7vh 3vh auto auto 3vh auto auto auto 6vh;
   }
   #mb{
     top: 3.6vh;
@@ -660,19 +659,20 @@ p.desc_contain{
     font-size: 0.7em;
   }
   .footer_latest ul{
-    /* font-size: 0.9em; */
+    font-size: 0.9em;
     text-align: center;
     margin-top: 0.1em;
   }
   .footer_collaborate p{
-    /* font-size: 0.9em; */
+    font-size: 0.9em;
     margin-top: 0.1em;
     text-align: center;
   }
 
   h3.footer_title {
   /* font-size: 1em; */
-  margin-bottom: 0em;
+  margin-bottom: 0.3em;
+  margin-top: 0.6em;
   text-align: center;
   }
 
@@ -682,10 +682,9 @@ p.desc_contain{
     justify-content: flex-start;
   }
   h1 {
-    letter-spacing: normal;
     font-family: 'Open Sans',sans-serif;
     font-weight: bold;
-    padding-left: 0.7em;
+    padding-left: 0em;
   }
 
 }
