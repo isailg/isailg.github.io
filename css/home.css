@@ -689,3 +689,13 @@ p.desc_contain{
   }
 
 }
+@media screen and (max-width: 320px) {
+  .header{
+    justify-content: flex-start;
+  }
+  h1 {
+
+    padding-left: 0em;
+  }
+
+}
