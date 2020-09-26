@@ -677,7 +677,7 @@ p.desc_contain{
   }
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .header{
     justify-content: flex-start;
   }
