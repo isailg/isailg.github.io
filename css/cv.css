@@ -10,7 +10,7 @@ body,html {
   display: grid;
   grid-template-columns: 4vw 43.5vw 3vw 43.5vw 5vw;
   grid-template-rows:
-  100px 30px 110px
+  100px 20px 130px
   auto
   90px auto 30px;
 
@@ -77,7 +77,7 @@ h6{
 .sk_al{
   text-align: center;
 }
-.project_r p,ul{
+.project_r p,.project_r ul{
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9em;
@@ -107,6 +107,7 @@ h6{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 1.4vh;
 }
 .navlist ul{
   display: flex;
@@ -114,10 +115,9 @@ h6{
   list-style: none;
   padding: 0;
 }
-
 .navlist a{
   text-decoration: none;
-  padding: 0 0 0 3vw;
+  padding: 0 0 0 2.7vw;
   color: white;
 }
 .page_title{
@@ -313,7 +313,7 @@ h6{
   text-align: left;
   padding: 0;
 }
-.footer_latest a, li{
+.footer_latest a,.footer_latest li{
   text-decoration: none;
   color: white;
   color: rgb(255, 255, 255, 0.6);
@@ -334,13 +334,13 @@ h6{
   color: rgb(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1111px) {
   .wrapper{
     display: grid;
     grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
     grid-template-rows:
-    100px 30px 100px
-    auto 200px auto
+    100px 20px 130px
+    auto 220px auto
     70px auto 30px;
     width: 100%;
   }
@@ -351,19 +351,60 @@ h6{
     grid-row-end: 2;
   }
   .navlist {
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 2;
+      display: none;
+  }
+  #mb{
+    display: block;
+    position: fixed;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+    border-radius: 33%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    top: 4.3vh;
+    left: 96vw;
+    z-index: 5;
+    transform: translate(-86%,0);
+  }
+  #nav_mobile ul{
+    display: block;
+    text-align: right;
+    padding-right: 3em;
+    margin-top: 17vh;
+  }
+  #nav_mobile li{
+    padding: 1.6em 0;
+  }
+  #nav_mobile{
+    display: block;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 4;
+    height: 130vh;
+    transition: .1s;
+  }
+  #nav_mobile{
+    left: 100%;
+    width: 0%;
   }
   .page_title{
     text-align: center;
     padding: 0;
   }
+  .header , .page_title {
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
   #education.page_title{
     display: flex;
-    align-items: center;
-    margin-top: 30px;
+    align-items: flex-start;
+    margin-top: 90px;
   }
 
   #work_experience{
@@ -434,60 +475,18 @@ h6{
   .project_fig{
     width: 100%;
   }
-  .header , .page_title {
-    justify-content: center;
-    grid-column-start: 2;
-    grid-column-end: 5;
-  }
+
   .navlist {
       display: none;
   }
-  #mb{
-    display: block;
-    position: fixed;
-    line-height: 3em;
-    text-align: center;
-    width: 3em;
-    height: 3em;
-    border-radius: 33%;
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-    top: 17vh;
-    left: 96vw;
-    z-index: 5;
-    transform: translate(-86%,0);
-  }
-  #nav_mobile ul{
-    display: block;
-    text-align: right;
-    padding-right: 3em;
-    margin-top: 170px;
-  }
-  #nav_mobile li{
-    padding: 1.6em 0;
-  }
-  #nav_mobile{
-    display: block;
-    position: fixed;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 4;
-    height: 130vh;
-    transition: .1s;
-  }
-  #nav_mobile{
-    left: 100%;
-    width: 0%;
-  }
+
 }
 
 @media screen and (max-width: 425px) {
   .wrapper{
     grid-template-rows:
-    70px 6px 60px
-    auto 110px auto
+    70px 9px 90px
+    auto 130px auto
     60px auto auto 30px 30px;
   }
   .project_img{
@@ -554,7 +553,11 @@ h6{
   .sk_al {
     padding-right: 0em;
   }
-
+  #education.page_title{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 37px;
+  }
   .footer_latest{
     grid-column-start: 2;
     grid-column-end: 5;
@@ -574,9 +577,9 @@ h6{
     grid-column-end: 5;
     grid-row-start: 10;
     grid-row-end: 11;
-    padding: 0 0 0 2vw;
-    font-size: 1em;
-    letter-spacing: 2vw;
+    padding: 0 0 0 3vw;
+    font-size: 1.3em;
+    letter-spacing: 3vw;
   }
   .footer{
     grid-column-start: 2;
@@ -584,7 +587,7 @@ h6{
     grid-row-start: 11;
     grid-row-end: 12;
     padding: 0 0 0 2vw;
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   .footer_latest ul{
     font-size: 0.9em;
@@ -595,7 +598,8 @@ h6{
     text-align: center;
   }
   h3.footer_title {
-    font-size: 1em;
+    margin-bottom: 0.3em;
+    margin-top: 0.6em;
     text-align: center;
   }
 }

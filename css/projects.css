@@ -477,7 +477,7 @@ h6{
 @media screen and (max-width: 425px) {
   .wrapper{
     grid-template-rows:
-    70px 6px 60px
+    70px 9px 90px
     auto auto     auto auto    auto auto    auto auto    auto
     70px auto auto 30px 30px;
   }
@@ -565,9 +565,9 @@ h6{
     grid-column-end: 10;
     grid-row-start: 16;
     grid-row-end: 17;
-    padding: 0 0 0 2vw;
-    font-size: 1em;
-    letter-spacing: 2vw;
+    padding: 0 0 0 3vw;
+    font-size: 1.3em;
+    letter-spacing: 3vw;
   }
   .footer{
     grid-column-start: 2;
@@ -575,7 +575,7 @@ h6{
     grid-row-start: 17;
     grid-row-end: 18;
     padding: 0 0 0 2vw;
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   .footer_latest ul{
     font-size: 0.9em;
@@ -586,7 +586,8 @@ h6{
     text-align: center;
   }
   h3.footer_title {
-    font-size: 1em;
+    margin-bottom: 0.3em;
+    margin-top: 0.6em;
     text-align: center;
   }
 }
