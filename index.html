@@ -1,133 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="description" content="Isaí López-García personal web. CV, Projects, Publications and OpenSource.">
-    <title>Isaí López-García</title>
-    <link rel="icon" href="images/icon.jpeg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Mono:wght@300;400&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
-    <script src="js/home.js" type="text/javascript"></script>
-  </head>
-  <body>
+    <title>Isaí López-García | AI Researcher </title>
+    <link rel="icon" href="images/icon.jpeg"/>
 
-    <a href="javascript:void(0);" onclick="myFunction()"><i class="icon-menu zbb" id="mb"></i></a>
-    <nav class="navlist" id="nav_mobile">
-      <ul>
-        <li><a href="https://isailg.github.io/cv">CV</a></li>
-        <li><a href="https://isailg.github.io/projects">Projects</a></li>
-        <li><a href="https://isailg.github.io/pages/page404">Publications</a></li>
-        <li><a href="https://isailg.github.io/pages/page404">OpenSource</a></li>
-        <li><a href="https://isailg.github.io/pages/page404">About</a></li>
-      </ul>
-    </nav>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };</script>
 
-    <div class="wrapper">
-      <i class="first"></i>
-      <i class="second"></i>
-      <i id="navbar"></i>
-      <header class="header">
-        <div class="logo">  <a id="nl" href="https://isailg.github.io"><h1>Isaí López-García</h1></a>  </div>
-      </header>
-      <nav class="navlist">
-        <ul>
-          <li><a href="https://isailg.github.io/cv">CV</a></li>
-          <li><a href="https://isailg.github.io/projects">Projects</a></li>
-          <li><a href="https://isailg.github.io/pages/page404">Publications</a></li>
-          <li><a href="https://isailg.github.io/pages/page404">OpenSource</a></li>
-          <li><a href="https://isailg.github.io/pages/page404">About</a></li>
-        </ul>
-      </nav>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #111;
+            --subtle-color: #666;
+            --accent-color: #0070f3; /* Azul Verde para links */
+            
+            /* Colores de las etiquetas*/
+            --badge-research: #0056b3; /* Azul oscuro */
+            --badge-talk: #28a745;     /* Verde */
+            --badge-job: #8e44ad;      /* Morado */
+            --badge-gray: #777;        /* Gris neutro */
+            
+            /* Gradiente Estocástico Ascendente */
+            --grad-start: rgba(34,156,195,1);
+            --grad-mid: rgba(54,175,166,1);
+            --grad-end: rgba(77,184,155,1);
+        }
 
-      <div class="hero">
-        <figure class="figh">
-          <img class="imgh"src="images/isai.png" alt="Hero" height="600px" width="400px">
-        </figure>
-      </div>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 3rem 1.5rem;
+            max-width: 680px;
+            margin: 0 auto;
+        }
 
-      <div class="terminal" id="term1"></div>
-      <h4 class="namet" id="term1_n"><i class="icon-tux ti"></i></h4>
-      <div class="desc" id="term1_d">
-        <h4 class="command_up" id="command_1"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg init</h4>
-        <h2 class="desc_title">- Personal Summary -</h2>
-        <p class="desc_contain" >Agricultural mechanical engineer oriented to software development with 2 years of experience in the desing of algorithms and built of C/ C ++  applications  for autonomous machines. </p>
+        /* HEADER */
+        header {
+            margin-bottom: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
 
-        <h2 class="desc_title">- Objective -</h2>
-        <p class="desc_contain" >Aiming to collaborate with the development of sustainably technologies for the grow, innovation and self-sustanability of the world for the 2050.
-        </p>
+        h1 { font-size: 1rem; font-weight: 700; margin: 0; letter-spacing: -0.5px; }
 
-        <h2 class="desc_title">- Fields of Interest -</h2>
-        <p  class="desc_contain">AI · Autonomous Machines · Byosystems · Clean Energy · Computer vision · FPGA design · Maths · Physics · Precision Farm · Sustainability · Web development </p>
-        <h4 class="command_int" id="command_3"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$</h4>
+        nav a {
+            font-size: 0.9rem;
+            color: var(--subtle-color);
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active { color: var(--text-color); }
 
-      </div>
+        /* BIO */
+        .intro-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 2rem;
+        }
 
-      <div class="terminal" id="term2"></div>
-      <h4 class="namet" id="term2_n"><i class="icon-tux ti"></i> </h4>
-      <div class="desc" id="term2_d">
-        <h4 class="command_up" id="command_4"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$ isailg status</h4>
-        <h2 class="desc_title">- Skills -</h2>
-        <div id="skills">
-          <h3 class="desc_subtitle" id="ds_1">Programming</h3>
-          <h3 class="desc_subtitle" id="ds_2">Frameworks and Tools</h3>
-          <h3 class="desc_subtitle" id="ds_3">Languages</h3>
-          <ul class="desc_contain" id="skills_c1">
-            <li>C/C++ 17</li>
-            <li>Python3 </li>
-            <li>JavaScript ES6</li>
-            <li>HTML5 & CSS3</li>
-            <li>Bash</li>
-          </ul>
-          <ul class="desc_contain" id="skills_c2" >
-            <li>Git</li>
-            <li>Linux</li>
-            <li>Jenkins</li>
-          </ul>
-          <ul class="desc_contain" id="skills_c3" >
-            <li>OpenCV</li>
-            <li>OpenGL</li>
-            <li>ROS</li>
-          </ul>
-          <ul class="desc_contain" id="skills_c4">
-            <li>Data Structures</li>
-            <li>Microcontrollers</li>
-            <li>Object Oriented Programming</li>
-          </ul>
-          <ul  class="desc_contain" id="skills_c5">
-            <li>Spanish  (Native)</li>
-            <li>English  (Good level)</li>
-            <li>Japanese (Intermediate)</li>
-            <li>German   (Basic)</li>
-          </ul>
+        .intro-text { flex: 1; font-size: 1.05rem; color: #222; }
+        .intro-text p { margin-top: 0; margin-bottom: 1.2rem; }
 
+        .photo-container {
+            width: 135px;
+            height: 135px;
+            background: linear-gradient(180deg, var(--grad-start) 0%, var(--grad-mid) 55%, var(--grad-end) 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+            mix-blend-mode: normal;
+        }
+
+        .photo-container:hover .profile-img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+        
+        /* --- INTRODUCCIÓN --- */
+        .intro-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 2rem;
+        }
+
+        .intro-text {
+            flex: 1;
+            font-size: 1.05rem;
+            color: #222;
+        }
+        .intro-text p { margin-top: 0; margin-bottom: 1.2rem; }
+
+        /* --- GRUPO FOTO + EMAIL --- */
+        .profile-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            /* RESTRICCIÓN ESTRICTA: Ancho fijo igual a la foto */
+            width: 135px;
+            flex-shrink: 0; /* Asegura que no se aplaste en pantallas raras */
+        }
+
+        /* FOTO */
+        .photo-container {
+            width: 100%; /* 100% de 135px */
+            height: 135px;
+            background: linear-gradient(180deg, var(--grad-start) 0%, var(--grad-mid) 55%, var(--grad-end) 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 8px; /* Espacio antes del email */
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+            mix-blend-mode: normal;
+        }
+        .photo-container:hover .profile-img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        /* EMAIL*/
+        .profile-email {
+            width: 100%;           /* Ocupa el ancho del padre (135px) */
+            font-size: 0.7rem;     /* Letra pequeña y técnica */
+            color: var(--subtle-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-family: "SF Mono", "Consolas", monospace;
+            text-align: center;    /* Centrado debajo de la foto */
+            
+            /* Rompe la palabra si es necesario para no ensanchar el container */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            line-height: 1.2;
+        }
+        .profile-email:hover {
+            /*color: var(--accent-color);*/
+            
+        }
+
+        /* --- RESPONSIVE (MÓVIL) --- */
+        @media (max-width: 600px) {
+            .intro-container {
+                /* MAGIA: Invierte el orden visual (Foto sube, Texto baja) */
+                flex-direction: column-reverse;
+                align-items: center; /* Centra todo horizontalmente */
+                gap: 20px;
+            }
+
+            .intro-text {
+                width: 100%;
+                text-align: left; /* El texto se mantiene legible a la izquierda */
+            }
+            
+            .profile-group {
+                /* En móvil, aseguramos que el grupo esté centrado */
+                margin-bottom: 10px;
+            }
+        }
+        /* KEYWORDS */
+        .keywords {
+            font-size: 0.8rem;
+            color: var(--subtle-color);
+            font-family: "SF Mono", "Consolas", monospace;
+            margin-bottom: 3.5rem;
+            display: block;
+            border-top: 1px solid #f4f4f4;
+            padding-top: 15px;
+        }
+
+        /* TITLES */
+        h2 {
+            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px;
+            color: var(--subtle-color); margin-bottom: 1.5rem; font-weight: 600;
+            border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; margin-top: 4rem;
+        }
+
+        /* LISTS */
+        .entry-list { list-style: none; padding: 0; margin: 0; }
+        .entry-item { margin-bottom: 2rem; }
+
+        .entry-header {
+            display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; flex-wrap: wrap;
+        }
+        
+        .title-group {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .entry-title {
+            font-weight: 600; color: var(--text-color); text-decoration: none; font-size: 1rem;
+        }
+        .entry-title:hover { color: var(--accent-color); }
+
+        .entry-meta {
+            font-size: 0.8rem; color: #999; margin-left: auto; white-space: nowrap; font-feature-settings: "tnum";
+        }
+
+        .entry-desc {
+            font-size: 0.95rem; color: #555; line-height: 1.5; margin-top: 5px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 0.7em;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+        
+        .bg-research { background-color: var(--badge-research); }
+        .bg-talk { background-color: var(--badge-talk); }
+        .bg-job { background-color: var(--badge-job); }
+        .bg-gray { background-color: var(--badge-gray); }
+
+
+        /* FOOTER */
+        footer {
+            margin-top: 5rem; border-top: 1px solid #eee; padding-top: 2rem;
+            display: flex; justify-content: space-between; font-size: 0.85rem; color: #888;
+        }
+        .footer-links a { color: inherit; text-decoration: none; margin-left: 15px; }
+        .footer-links a:hover { color: #000; }
+
+        @media (max-width: 600px) {
+            .intro-container { flex-direction: column-reverse; gap: 20px; }
+            .photo-container { width: 100px; height: 100px; margin-bottom: 10px; }
+            .entry-header { flex-direction: column; align-items: flex-start; }
+            .entry-meta { margin-left: 0; margin-top: 4px; margin-bottom: 4px; }
+            .title-group { gap: 8px; margin-bottom: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html" class="">Isaí López-García</a></h1>
+        <nav>
+            <a href="#" class="">Origins</a>
+            <a href="cv.pdf">CV</a>
+        </nav>
+    </header>
+
+    <div class="intro-container">
+        <div class="intro-text">
+            <p>
+                I am an <strong>MSc Student & AI Graduate Researcher</strong> at the <strong>Center for Research in Computing</strong> of <strong>National Polytechnic Institute</strong> (Mexico City), working under the supervision of <a href="#" class=""> Dr. Adolfo Guzmán-Arenas</a> (MIT alumnus and student of <a href="#" class="">Marvin Minsky</a>).
+            </p>
+            <p>
+                My current research focuses on designing <strong>tiny Vision Transformer architectures </strong> capable of learning from limited labeled data in complex environments. I am investigating Entropy-based kernels for <strong>vision models</strong> to represent more accurately objects features in images. Also, I am applying <strong>Combinatorial Optimization</strong> to solve the dynamic resource allocation problem in urban mobility systems (<a href="#" class="">Ecobici</a>, CDMX).
+            </p>
+            <p>
+            My goal is to transition into Mathematics for my Ph.D., specifically aiming to explore  <strong>Information Geometry</strong> to formalize some fundamental <strong>mechanisms of intelligence.</strong>
+            </p>
+            <p style="font-size: 0.9rem; color: #666;">
+            Research Interests: Mathematical Foundations of Artificial Intelligence | Mathematical NeuroScience | Combinatorial Optimization | Information Geometry | Data Mining | Theory of Information
+            </p>
         </div>
-        <h4 class="command_int" id="command_6"> <i class="alias">isailg@isailg:</i><i class="dir">~</i>$</h4>
-      </div>
-
-      <div class="bord"></div>
-      <div class="footer_latest">
-        <h3 class="footer_title">Latest updates</h3>
-        <ul>
-          <li><a href="https://isailg.github.io/projects">Auto-guide system for agricultural robots. <small>Project</small> </a></li>
-          <li><a href="https://isailg.github.io/projects">Environment recognition for mobile robots. <small>Project</small></a> </li>
-          <li><a href="https://isailg.github.io/cv">Internship at TUAT. <small>Work Experience</small></a></li>
-        </ul>
-      </div>
-      <div class="footer_contact">
-        <a href="https://github.com/isailg"> <i class="icon-github git-i"></i></a>
-        <a href="https://www.linkedin.com/in/isailg/"> <i class="icon-linkedin link-i"></i></a>
-        <a href="https://twitter.com/isailg0"> <i class="icon-twitter tw-i"></i></a>
-      </div>
-      <div class="footer_collaborate">
-        <h3 class="footer_title">Contact</h3>
-        <p>Email: isailg.contact@gmail.com <br>Ubication: Oaxaca, México <br> Open to relocation </p>
-      </div>
-      <footer class="footer">
-          © 2020 Isaí López-García
-      </footer>
+        
+        <div class="profile-group">
+                <div class="photo-container">
+                    <img src="images/isai.png" alt="Isaí LG" class="profile-img">
+                </div>
+                <span class="profile-email">ilopezg2024@cic.ipn.mx</span>
+        </div>
     </div>
 
-  </body>
+    <h2>Research</h2>
+    <ul class="entry-list">
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-research">MSc Thesis</span>
+                    <span class="entry-title"> A Vision Model for Object Detection in Complex Environments</span>
+                </div>
+                <span class="entry-meta">In Progress</span>
+            </div>
+            <div class="entry-desc">
+                Trained a Self-Supervised Vision Transformer (DINOv3 S/16) on a custom dataset of 60,000 unlabeled agricultural images using High-Performance Computing clusters of CIMAT.
+                Attention mechanisms learned autonomously robust morphological features without labels.
+                The model obtained an accuracy of 82% in linear classification (maize/weed) using only 50 annotated samples per class.
+            </div>
+        </li>
+
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-gray">In prep</span>
+                    <span class="entry-title"> DASE: Data Segmentation for Demand Prediction in the Ecobici System</span>
+                </div>
+                <span class="entry-meta"></span>
+            </div>
+            <div class="entry-desc">
+                A symbolic algorithm for demand prediction based on association rules (Origin Station + User Type → Destination). Currently working on strategies to reduce the combinatorial explosion of mining frequent patterns across the network.
+            </div>
+        </li>
+    </ul>
+
+    <h2>Publications & Talks</h2>
+    <ul class="entry-list">
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-talk">Workshop Instructor</span>
+                    <span class="entry-title">Algorithms for Data Science: Modeling the Urban Mobility of the Ecobici System</span>
+                </div>
+                <span class="entry-meta">Oct 2025</span>
+            </div>
+            <div class="entry-desc">
+                <strong>CORE Congress 2025 @ CIC-IPN</strong>. Designed and taught a 2-day workshop on modeling urban mobility
+                using real-world data from Mexico City's Ecobici System, Mexico.
+            </div>
+        </li>
+        
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-gray">Conference</span>
+                    <a href="#" class="entry-title"> Weed Detection in Crop Fields using Machine Learning</a>
+                </div>
+                <span class="entry-meta">Dec 2025</span>
+            </div>
+            <div class="entry-desc">
+                López-García, I. and Guzmán-Arenas, A., <em>Memories of the 2025 CIMAT's Supercomputing Workshop</em>, Guanajuato, Mexico.
+            </div>
+        </li>
+
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-gray">Conference</span>
+                    <a href="#" class="entry-title">Automatic Guidance System for Agricultural Robots</a>
+                </div>
+                <span class="entry-meta">Oct 2020</span>
+            </div>
+            <div class="entry-desc">
+                López G., I., Velázquez L., N., <em>Proceedings of the VIII International Congress of Agronomic Sciences</em>, Mexico.
+            </div>
+        </li>
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-gray">Conference</span>
+                    <a href="#" class="entry-title">Computer Vision Algorithm for Enviroment Understanding of Agricultural Robots</a>
+                </div>
+                <span class="entry-meta">Oct 2020</span>
+            </div>
+            <div class="entry-desc">
+                López G., I., Velázquez L., N., <em>Proceedings of the VIII International Congress of Agronomic Sciences</em>, Mexico.
+            </div>
+        </li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul class="entry-list">
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="entry-title">MSc. in Computer Science</span>
+                </div>
+                <span class="entry-meta">2024 – Present</span>
+            </div>
+            <div class="entry-desc">
+                <strong>Center for Research in Computing (CIC-IPN)</strong>. <br>
+                Focus: AI, Computer Vision & Bio-inspired Algorithms.
+            </div>
+        </li>
+
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="entry-title">B.Eng. Agricultural Mechanical Engineering</span>
+                </div>
+                <span class="entry-meta">2014 – 2019</span>
+            </div>
+            <div class="entry-desc">
+                <strong>Chapingo Autonomous University</strong>. <br>
+                <em>Graduated with Honors</em>. Thesis on Robotics & Computer Vision.
+            </div>
+        </li>
+    </ul>
+
+    <h2>Professional Experience</h2>
+    <ul class="entry-list">
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-job">Research</span>
+                    <span class="entry-title">Graduate Researcher in AI</span>
+                </div>
+                <span class="entry-meta">Center for Research in Computing (Mexico City, Mexico)</span>
+            </div>
+            <div class="entry-desc">
+                Computer Vision Algorithms
+                Data Mining Algorithms
+                Theory of Computational Learning
+            </div>
+        </li>
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-job">Industry</span>
+                    <span class="entry-title">Robotics Computer Vision Engineer</span>
+                </div>
+                <span class="entry-meta">Solaris Robots (Toronto, Canada)</span>
+            </div>
+            <div class="entry-desc">
+                Worked on algorithms for autonomous mobile robots.
+            </div>
+        </li>
+
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-job">Startup</span>
+                    <span class="entry-title">Data Scientist & Co-Founder</span>
+                </div>
+                <span class="entry-meta">KIKAI Intelligence (Oaxaca, Mexico)</span>
+            </div>
+            <div class="entry-desc">
+                Developed a crop disease detection mobile app using TensorFlow Lite (C++ API).
+                Recognized among the top 150 projects in the Heineken Green Challenge 2022.
+            </div>
+        </li>
+        
+        <li class="entry-item">
+            <div class="entry-header">
+                <div class="title-group">
+                    <span class="badge bg-job">Research</span>
+                    <span class="entry-title">Visiting Research Student (Computer Vision) </span>
+                </div>
+                <span class="entry-meta">TUAT (Tokyo, Japan)</span>
+            </div>
+            <div class="entry-desc">
+                Developed grass detection algorithms using various color models and statistical analysis
+                at the Tokyo University of Agriculture and Technology under the supervision of Dr. Tadashi Chosa.
+            </div>
+        </li>
+
+    </ul>
+
+    <h2>Honors & Awards</h2>
+    <ul class="entry-list" style="font-size: 0.9rem;">
+        <li class="entry-item" style="margin-bottom: 0.5rem;">
+            <strong>CONACYT Graduate Fellowship</strong> (2024 - Present).
+        </li>
+        <li class="entry-item" style="margin-bottom: 0.5rem;">
+            <strong>Graduated with Honors</strong> (2019) - Chapingo Autonomous University.
+        </li>
+        <li class="entry-item" style="margin-bottom: 0.5rem;">
+            <strong>Undergraduate Fellowship</strong> (2014-2019) - Chapingo Autonomous University.
+        </li>
+        <li class="entry-item" style="margin-bottom: 0.5rem;">
+            <strong>International Mobility Scholarship</strong> (2018) - Mexican Government.
+        </li>
+    </ul>
+
+    <footer>
+        <span>© 2025 Isaí López-García</span>
+        <div class="footer-links">
+            <a href="mailto:ilopezg2024@cic.ipn.mx">Email</a>
+            <a href="https://github.com/isailg">GitHub</a>
+            <a href="https://linkedin.com/in/isailg">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
 </html>
