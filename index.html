@@ -16,7 +16,7 @@
             --bg-color: #ffffff;
             --text-color: #111;
             --subtle-color: #666;
-            --accent-color: #0070f3; /* Azul Verde para links */
+            --accent-color: #0056bd;  /*  Azul Verde para links */
             
             /* Colores de las etiquetas*/
             --badge-research: #0056b3; /* Azul oscuro */
@@ -50,6 +50,7 @@
         }
 
         h1 { font-size: 1rem; font-weight: 700; margin: 0; letter-spacing: -0.5px; }
+        header a{ color: black; text-decoration: none;}
 
         nav a {
             font-size: 0.9rem;
@@ -113,7 +114,13 @@
             font-size: 1.05rem;
             color: #222;
         }
+
         .intro-text p { margin-top: 0; margin-bottom: 1.2rem; }
+        .intro-text a { color: var(--accent-color); } /**/
+        .intro-text a:hover { color: blue;} /* text-decoration: none;*/
+        strong {font-size: 1rem;     /* Letra pequeña y técnica */
+            color: #0056bd;
+            text-decoration: none;}
 
         /* --- GRUPO FOTO + EMAIL --- */
         .profile-group {
@@ -284,7 +291,7 @@
     <div class="intro-container">
         <div class="intro-text">
             <p>
-                I am an <strong>MSc Student & AI Graduate Researcher</strong> at the <strong>Center for Research in Computing</strong> of <strong>National Polytechnic Institute</strong> (Mexico City), working under the supervision of <a href="#" class=""> Dr. Adolfo Guzmán-Arenas</a> (MIT alumnus and student of <a href="#" class="">Marvin Minsky</a>).
+            <strong>MSc Student</strong> in Computer Science & <strong>Graduate Research Assistant in Artificial Intelligence</strong> at the Center for Research in Computing of National Polytechnic Institute (Mexico City), working under the supervision of <a href="https://es.wikipedia.org/wiki/Adolfo_Guzmán_Arenas" class=""> Dr. Adolfo Guzmán-Arenas </a>(MIT alumnus and student of <a href="https://en.wikipedia.org/wiki/Marvin_Minsky" class="">Marvin Minsky</a>.
             </p>
             <p>
                 My current research focuses on designing <strong>tiny Vision Transformer architectures </strong> capable of learning from limited labeled data in complex environments. I am investigating Entropy-based kernels for <strong>vision models</strong> to represent more accurately objects features in images. Also, I am applying <strong>Combinatorial Optimization</strong> to solve the dynamic resource allocation problem in urban mobility systems (<a href="#" class="">Ecobici</a>, CDMX).
@@ -426,7 +433,7 @@
             <div class="entry-header">
                 <div class="title-group">
                     <span class="badge bg-job">Research</span>
-                    <span class="entry-title">Graduate Researcher in AI</span>
+                    <span class="entry-title">Graduate Research Assistant (AI)</span>
                 </div>
                 <span class="entry-meta">Center for Research in Computing (Mexico City, Mexico)</span>
             </div>
